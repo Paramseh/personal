@@ -25,10 +25,10 @@ const allProjects = [
     id: 'holoblast',
     title: 'Holoblast',
     coverDescription: 'Multiplayer XR shooter game built for IOS and Oculus Quest 2. Presented at CMU Game Creation Society.',
-    thumb: 'images/holoblast/Holoblast.gif',
+    thumb: 'images/holoblast/HoloBlast.gif',
     tags: ['2022', 'Unity', 'AR Kit/AR Core', 'XR'],
     content: `<div>#2022<br/>
-                <img src="/images/holoblast/Holoblast.gif" width="400px">
+                <img src="/images/holoblast/HolBblast.gif" width="400px">
                 <br/>
                 I led a team at CMU's Game Creation Society to develop HoloBlast, an XR multiplayer shooter game. In this game, 
                 up to five players join a lobby and engage in laser tag-style shooting. Custom skins can be chosen for armor and 
@@ -37,7 +37,7 @@ const allProjects = [
                 <br/>
                 <br/>
                 Another in game clip, we have a map and multiplayer features. <br/>
-                <a href="/images/holoblast/Holoblast2.gif"><img src="/images/holoblast/Holoblast2.gif" width="400px"></a><br/>
+                <a href="/images/holoblast/HoloBlast2.gif"><img src="/images/holoblast/HoloBlast2.gif" width="400px"></a><br/>
                 <a href="https://youtu.be/wo33J5amnwg?si=H7atumJUDmt9N33k&t=1408">GCS Pitch Video</a><br/>
                 <a href="https://github.com/paramseh/holoblast">Github</a><br/>
               </div>`,
