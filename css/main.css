@@ -1,0 +1,329 @@
+/* @font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Regular.ttf);
+} */
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #333;
+    font-family: Lato;
+    font-size: 14px;
+    background: #f6f6f6;
+}
+
+#app {
+    display: flex;
+    min-width: 800px;
+    flex-direction: column;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+p,
+div {
+    margin: 0;
+    /* font-family: 'Courier New', Courier, Monaco, monospace; */
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    font-size: 16px;
+}
+
+.page-title a {
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.header-tabs {
+    display: flex;
+}
+
+.header-tabs p {
+    margin: 0 10px 0 10px;
+}
+
+.body,
+.home-root,
+.projects-root,
+.project-details-root {
+    display: flex;
+    width: 100%;
+}
+
+.body,
+.home-root {
+    justify-content: space-between;
+}
+
+.body {
+    margin: 0 30px 100px 30px;
+}
+
+/* .intro {
+    width: 400px;
+    margin-top: 60px;
+    font-size: 16px;
+} */
+
+.intro {
+    margin: 0 10px 20px 10px;
+}
+
+.intro-social {
+    display: flex; 
+    align-items: center;
+}
+
+.intro-social img {
+    margin-left: 2px;
+}
+
+.cover-image img {
+    height: 600px;
+}
+
+.home-title {
+    font-size: 22px;
+    color: #444444;
+}
+
+.left-bar {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    margin: 10px 10px 20px 40px;
+    padding: 20px 0 20px 20px;
+    background: white;
+}
+
+.left-bar .lb-header {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.left-bar .lb-sub {
+    margin: 5px 15px;
+}
+
+.lb-sub a,
+.project-card a {
+    text-decoration: none;
+}
+
+.project-card .title {
+    font-weight: 800;
+    font-size: 18px;
+    color: #444444;
+}
+
+.project-card .cover-description {
+    margin: 10px 0;
+}
+
+.project-card span {
+    background: #DDDDDD;
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.lb-sub .active a {
+    color: #3CB0DA;
+}
+
+.project-details-container a {
+    text-decoration: none;
+    color: #3CB0DA;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.project-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.project-card p {
+    width: 400px;
+}
+
+.project-card img {
+    margin-top: 10px;
+    height: 300px;
+}
+
+.project-details-container {
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.project-details-container p,
+.project-details-container div {
+    font-family: Lato;
+    color: #555;
+}
+
+.project-details-container .title {
+    font-size: 19px;
+}
+
+.project-details-container img {
+    max-width: 700px;
+    margin: 20px 20px 20px 0;
+}
+
+.experiments-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experiments-container .experiment-card {
+    padding: 10px;
+    margin: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    background-color: white;
+}
+
+.experiments-container .experiment-card p {
+    font-size: 12px;
+}
+
+.experiments-container img {
+    width: 800px;
+    height: 800px;
+}
+
+.experiments-container iframe {
+    width: 800px;
+    height: 800px;
+}
+
+.experiments-container .text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-root {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    #app {
+        overflow-x: hidden;
+        min-width: initial;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-tabs {
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+
+    .home-root,
+    .project-details-root {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        width: 100%;
+        margin: initial;
+        margin-bottom: 40px;
+    }
+
+    .lb-header {
+        margin-left: 15px;
+    }
+
+    .home-root {
+        margin: initial;
+    }
+
+    .home-root .intro {
+        width: initial;
+        margin: 40px 40px 40px 40px;
+    }
+
+    .cover-image img {
+        width: 100%;
+        height: initial;
+    }
+
+    .project-container {
+        width: initial;
+        justify-content: center;
+    }
+
+    .project-details-container {
+        width: initial;
+        margin-left: initial;
+        padding: 10px 40px;
+    }
+
+    .project-details-container img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .experiments-container .experiment-card {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .experiments-container img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .experiments-container iframe {
+        max-width: 100%;
+        height: 400px;
+    }
+}
