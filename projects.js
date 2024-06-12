@@ -28,7 +28,7 @@ const allProjects = [
     thumb: 'images/holoblast/HoloBlast.gif',
     tags: ['2022', 'Unity', 'AR Kit/AR Core', 'XR'],
     content: `<div>#2022<br/>
-                <img src="/images/holoblast/HolBblast.gif" width="400px">
+                <img src="/images/holoblast/HolBlast.gif" width="400px">
                 <br/>
                 I led a team at CMU's Game Creation Society to develop HoloBlast, an XR multiplayer shooter game. In this game, 
                 up to five players join a lobby and engage in laser tag-style shooting. Custom skins can be chosen for armor and 
